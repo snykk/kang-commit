@@ -1,0 +1,30 @@
+name: Kang Commit
+
+on:
+  push:
+    branches:
+      - master
+
+  schedule:
+    - cron: "0 * * * *"
+
+jobs:
+  auto-commit-job:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+
+      - name: Run Task
+        run: |
+          chmod +x ./task.sh
+          ./task.sh
+
+      - name: Github Push
+        uses: ad-m/github-push-action@master
+        with:
+          force: true
+          directory: "."
+          github_token: ${{ secrets.GITHUB_TOKEN }}
