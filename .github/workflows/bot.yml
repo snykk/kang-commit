@@ -6,7 +6,7 @@ on:
       - master
 
   schedule:
-    - cron: "0 * * * *"
+    - cron: "0 */4 * * *"
 
 jobs:
   auto-commit-job:
@@ -18,9 +18,7 @@ jobs:
           fetch-depth: 0
 
       - name: Run Task
-        run: |
-          chmod +x ./task.sh
-          ./task.sh
+        run: chmod +x ./task.sh && ./task.sh
 
       - name: Github Push
         uses: ad-m/github-push-action@master
