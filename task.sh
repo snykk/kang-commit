@@ -13,6 +13,8 @@ ARR[8]="bot: 👨‍💻 Wearing a hoodie like Elliot"
 ARR[9]="bot: ☕ Need more caffeine tonight"
 ARR[10]="bot: 🗿 My grand mother run faster than your code"
 ARR[11]="bot: ☕ Coffee, coffee, and coffee"
+ARR[12]="bot: 🤯 When we lose our principles, we invite chaos"
+ARR[13]="bot: 😵 Control can sometimes be an illusion"
 
 RANDOM_INDEX=$[$RANDOM % ${#ARR[@]}]
 NOW=`TZ='GMT-7' date '+%Y-%m-%d %H:%M:%S'`
