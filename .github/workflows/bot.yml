@@ -17,8 +17,8 @@ jobs:
           persist-credentials: false
           fetch-depth: 0
 
-      - name: Run Task
-        run: chmod +x ./task.sh && ./task.sh
+      - name: Run Commit
+        run: chmod +x ./commit.sh && ./commit.sh
 
       - name: Github Push
         uses: ad-m/github-push-action@master

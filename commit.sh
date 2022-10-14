@@ -15,11 +15,14 @@ ARR[10]="bot: 🗿 My grand mother run faster than your code"
 ARR[11]="bot: ☕ Coffee, coffee, and coffee"
 ARR[12]="bot: 🤯 When we lose our principles, we invite chaos"
 ARR[13]="bot: 😵 Control can sometimes be an illusion"
+ARR[14]="bot: 😦 We're all living in each other's paranoia"
+ARR[15]="bot: 👣 Honeypot is awesome"
+
 
 RANDOM_INDEX=$[$RANDOM % ${#ARR[@]}]
 NOW=`TZ='GMT-7' date '+%Y-%m-%d %H:%M:%S'`
 
-echo "## 🙄 Last update at: ${NOW}+07:00" > last_update.md
+echo "## 👋 Last update at: ${NOW}+07:00" > last_update.md
 
 git config --local user.email "najibfikri13@gmail.com"
 git config --local user.name "Najib Fikri"
